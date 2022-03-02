@@ -1,2 +1,5 @@
 # study-network
-basic network study
+네트워크에 대하여 기본적인 지식을 알고자 한다.
+
+# reference
+인프라/네트워크 엔지니어를 위한 네트워크 이해 및 설계 가이드
