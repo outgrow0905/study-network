@@ -15,12 +15,12 @@ NAT에는 작동방식에 따라 여러가지가 있지만, 많이 쓰는 방식
 
 #### 정적 NAT practice (NAVER Cloud VPC 환경)
 ~~~
-vpc: 192.168.0.0/16
-subnet: 192.168.100.0/24
-NAT address: 110.165.21.50
-
 source: 
     private ip: 192.168.100.6
+    vpc: 192.168.0.0/16
+    subnet: 192.168.100.0/24
+    NAT address: 110.165.21.50
+    
 destination: 
     public ip: 101.79.9.192
     private ip: 192.168.200.7
@@ -49,12 +49,12 @@ public ip인 101.79.9.192 으로 요청을 하였으나, 패킷의 destination i
 
 #### NAPT practice 1 (NAVER Cloud VPC 환경)
 ~~~
-vpc: 192.168.0.0/16
-subnet: 192.168.100.0/24
-NAT address: 110.165.21.50
-
-source: 
+source:
+    vpc: 192.168.0.0/16
+    subnet: 192.168.100.0/24
+    NAT address: 110.165.21.50 
     private ip: 192.168.100.6
+    
 destination: 
     public ip: 101.79.9.192
     private ip: 192.168.200.7
